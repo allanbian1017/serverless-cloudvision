@@ -1,0 +1,22 @@
+service: serverless-cloudvision
+
+provider:
+  name: google
+  runtime: nodejs
+  project: projectid
+  credentials: ~/.gcloud/keyfile.json
+
+plugins:
+  - serverless-google-cloudfunctions
+
+package:
+  exclude:
+    - node_modules/**
+    - .gitignore
+    - .git/**
+
+functions:
+  cloudvision:
+    handler: cloudvision
+    events:
+      - http: cloudvision

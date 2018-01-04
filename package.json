@@ -1,0 +1,21 @@
+{
+  "name": "serverless-cloudvision",
+  "version": "0.1.0",
+  "description":
+    "This project is a serverless API wrapper around Google Cloud Vision",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "author": "allanbian",
+  "dependencies": {
+    "@google-cloud/vision": "^0.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-google": "^0.9.1",
+    "prettier": "^1.9.2",
+    "serverless-google-cloudfunctions": "^1.1.1"
+  }
+}
